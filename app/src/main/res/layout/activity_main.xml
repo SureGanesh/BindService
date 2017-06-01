@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ganesh.bindservice.MainActivity">
+
+    <Button
+        android:id="@+id/btn_bindservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Bind Service"
+        android:onClick="bindMethod"/>
+
+    <Button
+        android:id="@+id/btn_unbindservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_bindservice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="UnBind Service"
+        android:onClick="unbindMethod"/>
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_unbindservice"
+        android:layout_marginLeft="50dp"
+        android:hint="Enter Number here"
+        android:gravity="left">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_factorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_number"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Find Factorial"
+        android:onClick="factorialMethod"/>
+
+</RelativeLayout>
+
+
+
